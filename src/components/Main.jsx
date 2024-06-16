@@ -26,8 +26,8 @@ export default function Main(){
 
 
             <section className='px-28'>
-                <h2>Why choose Easybank?</h2>
-                <p>We leverage Open Banking to turn your bank account into your financial hub. Control 
+                <h2 className='text-3xl'>Why choose Easybank?</h2>
+                <p className='text-gray-400'>We leverage Open Banking to turn your bank account into your financial hub. Control 
                 your finances like never before.</p>
                 <div className='flex items-center justify-between'>
                     <article className='w-1/6'>
@@ -58,20 +58,34 @@ export default function Main(){
 
 
 
-            <section>
-                <h2></h2>
-                <div>
-                    <article>
-                    
+            <section className='px-28'>
+                <h2 className='text-3xl'>Latest Articles</h2>
+                <div className='flex items-center justify-between'>
+                    <article className='flex flex-col w-1/6'>
+                        <img src={CurrencyImage} alt="" />
+                        <p>By Claire Robinson</p>
+                        <h6>Receive money in any currency with no fees</h6>
+                        <p>The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …</p>
                     </article>
-                    <article>
-                    
+                    <article className='flex flex-col w-1/6'>
+                        <img src={RestaurantImage} alt="" />
+                        <p>By Wilson Hutton</p>
+                        <h6>Treat yourself without worrying about money</h6>
+                        <p>Our simple budgeting feature allows you to separate out your spending and set 
+                        realistic limits each month. That means you …</p>
                     </article>
-                    <article>
-                    
+                    <article className='flex flex-col w-1/6'>
+                        <img src={PlaneImage} alt="" />
+                        <p>By Wilson Hutton</p>
+                        <h6>Take your Easybank card wherever you go</h6>
+                        <p>We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …</p>
                     </article>
-                    <article>
-                    
+                    <article className='flex flex-col w-1/6'>
+                        <img src={ConfettiImage} alt="" />
+                        <p>By Claire Robinson</p>
+                        <h6>Our invite-only Beta accounts are now live!</h6>
+                        <p>After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
+                        It’s easy to request an invite through the site ...</p>
                     </article>
                 </div>
 

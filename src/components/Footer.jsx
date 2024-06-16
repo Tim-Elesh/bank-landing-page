@@ -8,7 +8,7 @@ import instagram from '../images/icon-instagram.svg'
 
 export default function Footer(){
     return(
-        <footer className="w-full h-24 flex items-center justify-between bg-blue-950 text-white p-10">
+        <footer className="w-full h-32 flex items-center justify-between bg-blue-950 text-white p-10">
             <div className='flex gap-4'>
                 <div>
                     <img src={logo} alt="" />
