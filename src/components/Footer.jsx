@@ -9,7 +9,7 @@ import instagram from '../images/icon-instagram.svg'
 export default function Footer(){
     return(
         <footer className="w-full h-32 flex items-center justify-between bg-blue-950 text-white p-10">
-            <div className='flex gap-4'>
+            <div className='flex gap-24'>
                 <div>
                     <img src={logo} alt="" />
                     <ul className='flex'>
@@ -20,22 +20,22 @@ export default function Footer(){
                         <li><img src={instagram} alt="" /></li>
                     </ul>
                 </div>
-                <div className='flex gap-4'>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Blog</a></li>
+                <div className='flex gap-24'>
+                    <ul className='flex flex-col gap-2'>
+                        <li className='hover:text-emerald-500 duration-300'><a href="#">About Us</a></li>
+                        <li className='hover:text-emerald-500 duration-300'><a href="#">Contact</a></li>
+                        <li className='hover:text-emerald-500 duration-300'><a href="#">Blog</a></li>
                     </ul>
-                    <ul>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                    <ul className='flex flex-col gap-2'>
+                        <li className='hover:text-emerald-500 duration-300'><a href="#">Careers</a></li>
+                        <li className='hover:text-emerald-500 duration-300'><a href="#">Support</a></li>
+                        <li className='hover:text-emerald-500 duration-300'><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
-                <div>
+                <div className='pr-10 flex flex-col justify-end gap-4'>
                     <button className='px-6 py-2 text-white rounded-full bg-gradient-to-r from-emerald-300 to-sky-300'>Request Invite</button>
-                    <p>© Easybank. All Rights Reserved</p>
+                    <p className='text-gray-400 text-right'>© Easybank. All Rights Reserved</p>
                 </div>         
         </footer>
     )
