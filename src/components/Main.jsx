@@ -7,26 +7,28 @@ import ConfettiImage from '../images/image-confetti.jpg'
 import CurrencyImage from '../images/image-currency.jpg'
 import PlaneImage from '../images/image-plane.jpg'
 import RestaurantImage from '../images/image-restaurant.jpg'
+import BackGround from '../images/bg-intro-desktop.svg'
 
 
 export default function Main(){
     return(
         <main>
-            <section className='flex justify-between items-center px-28'>
-                <div className='w-1/5 flex flex-col gap-10'>
-                    <h2 className='text-4xl text-slate-700'>Next generation digital banking</h2>
-                    <p> Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
-                    <button className='px-6 py-2 text-white rounded-full bg-gradient-to-r from-emerald-300 to-sky-300'>Request Invite</button>
+            <section className='flex flex-col sm:flex md:flex lg:flex justify-between items-center px-28 bg-slate-50'>
+                <div className='w-1/3 flex flex-col gap-10'>
+                    <h2 className='text-6xl text-slate-700'>Next generation digital banking</h2>
+                    <p className='text-gray-400'> Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
+                    <button className='px-6 py-2 w-1/3 text-white rounded-full bg-gradient-to-r from-emerald-300 to-sky-300'>Request Invite</button>
                 </div>
-                <div className='w-1/3'>
-                    <img src={MockupsImage} alt="" />
+                <div className='w-1/3 absolute'>
+                    <img className='absolute w-full h-[140%] top-0 right-0' src={MockupsImage} alt="" />
+                    <img className='h-[130%] w-full' src={BackGround} alt=''/>
                 </div>
             </section>
 
 
 
             <section className='px-28 py-20 bg-slate-100'>
-                <h2 className='text-3xl pb-8'>Why choose Easybank?</h2>
+                <h2 className='text-slate-600 text-4xl pb-8'>Why choose Easybank?</h2>
                 <p className='text-gray-400 w-1/3 pb-12'>We leverage Open Banking to turn your bank account into your financial hub. Control 
                 your finances like never before.</p>
                 <div className='flex items-center justify-between'>
@@ -58,45 +60,44 @@ export default function Main(){
 
 
 
-            <section className='px-28 py-16 bg-slate-50'>
-                <h2 className='text-4xl pb-8 text-slate-700'>Latest Articles</h2>
-                <div className='flex items-center justify-between'>
-                    <article className='bg-white flex flex-col w-1/6 gap-3'>
-                        <img className='rounded-md w-full h-1/3' src={CurrencyImage} alt="" />
+            <section className='px-24 py-16 bg-slate-50'>
+                <h2 className='text-4xl pb-8 text-slate-700 w-full'>Latest Articles</h2>
+                <div className='flex items-center justify-center gap-48'>
+                    <article className='bg-white flex flex-col w-1/6 h-1/3 gap-3'>
+                        <img className='rounded-md w-full h-48' src={CurrencyImage} alt="" />
                         <div className='p-4 text-gray-400 flex flex-col gap-4'>
-                            <p>By Claire Robinson</p>
+                            <p className='text-sm'>By Claire Robinson</p>
                             <h6 className='text-black'>Receive money in any currency with no fees</h6>
-                            <p>The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …</p>
+                            <p className='text-sm'>The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …</p>
                         </div>
                     </article>
                     <article className='bg-white flex flex-col w-1/6 h-1/3 gap-3'>
-                        <img className='rounded-md w-full h-1/3' src={RestaurantImage} alt="" />
+                        <img className='rounded-md w-full h-48' src={RestaurantImage} alt="" />
                         <div className='p-4 text-gray-400 flex flex-col gap-4'>
-                            <p>By Wilson Hutton</p>
+                            <p className='text-sm'>By Wilson Hutton</p>
                             <h6 className='text-black'>Treat yourself without worrying about money</h6>
-                            <p>Our simple budgeting feature allows you to separate out your spending and set 
+                            <p className='text-sm'>Our simple budgeting feature allows you to separate out your spending and set 
                             realistic limits each month. That means you …</p>
                         </div>
                     </article>
-                    <article className='bg-white flex flex-col w-1/6 gap-3'>
-                        <img className='rounded-md w-full h-1/3' src={PlaneImage} alt="" />
+                    <article className='bg-white flex flex-col w-1/6 h-1/3 gap-3'>
+                        <img className='rounded-md w-full h-48' src={PlaneImage} alt="" />
                         <div className='p-4 text-gray-400 flex flex-col gap-4'>
-                            <p>By Wilson Hutton</p>
+                            <p className='text-sm'>By Wilson Hutton</p>
                             <h6 className='text-black'>Take your Easybank card wherever you go</h6>
-                            <p>We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …</p>
+                            <p className='text-sm'>We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …</p>
                         </div>
                     </article>
-                    <article className='bg-white flex flex-col w-1/6 gap-3'>
-                        <img className='rounded-md w-full h-1/3' src={ConfettiImage} alt="" />
+                    <article className='bg-white flex flex-col w-1/6 h-1/3 gap-3'>
+                        <img className='rounded-md w-full h-48' src={ConfettiImage} alt="" />
                         <div className='p-4 text-gray-400 flex flex-col gap-4'>
-                            <p>By Claire Robinson</p>
+                            <p className='text-sm'>By Claire Robinson</p>
                             <h6 className='text-black'>Our invite-only Beta accounts are now live!</h6>
-                            <p>After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
+                            <p className='text-sm'>After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
                             It’s easy to request an invite through the site ...</p>
                         </div>
                     </article>
                 </div>
-
             </section>
         </main>
     )
